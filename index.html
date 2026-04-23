@@ -1,125 +1,226 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Algebra Digital MCQ Assessment</title>
+# Self-Directed Assessment Tool in Algebra (MCQ)
 
-<style>
-body{
-font-family: Arial;
-background:#f4f6f9;
-padding:40px;
-}
+## Directions
+Read each question carefully. Encircle the best answer in the provided options.
 
-.container{
-background:white;
-padding:30px;
-max-width:1000px;
-margin:auto;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
+---
 
-.question{
-margin-bottom:25px;
-padding-bottom:15px;
-border-bottom:1px solid #ddd;
-}
+### Questions
 
-.explanation{
-margin-top:10px;
-padding:10px;
-border-radius:5px;
-}
+1. What property of equality is used when \(a = b\) then \(b = a\)?  
+A. Reflexive Property  
+B. Symmetric Property  
+C. Transitive Property  
+D. Commutative Property  
 
-.correct{background:#d4edda;}
-.incorrect{background:#f8d7da;}
+2. Which point will make the relation not a function?  
+Given: (3,7), (2,4), (5,2), (6,3)  
+A. (10,12)  
+B. (3,12)  
+C. (9,12)  
+D. (8,7)  
 
-button{
-padding:12px 25px;
-background:#2e86de;
-color:white;
-border:none;
-border-radius:5px;
-cursor:pointer;
-font-size:16px;
-}
-</style>
-</head>
+3. Which of the following is a function?
 
-<body>
+| x  | y  |
+|----|----|
+| -1 | 5  |
+| 1  | 5  |
+| 4  | 5  |
+| -4 | 5  |
+| 1  | -5 |
 
-<div class="container">
+| x  | y  |
+|----|----|
+| 1  | 0  |
+| 0  | 2  |
+| 5  | -4 |
+| -2 | -1 |
+| 1  | 5  |
 
-<h1>Algebra Digital MCQ Assessment</h1>
-<p>Please answer all 35 questions carefully.</p>
+| x  | y  |
+|----|----|
+| 2  | 2  |
+| 3  | 3  |
+| 4  | 4  |
+| 5  | 5  |
+| 6  | 6  |
 
-<!-- ================= QUESTIONS ================= -->
+| x  | y  |
+|----|----|
+| 1  | -4 |
+| 4  | 2  |
+| -4 | 0  |
+| 0  | 3  |
+| -4 | -2 |
 
-<!-- TEMPLATE USED FOR ALL QUESTIONS -->
+A.  
+B.  
+C.  
+D.  
 
-<!-- Q1 -->
-<div class="question">
-<p><strong>1. Property of equality when a = b then b = a?</strong></p>
-<input type="radio" name="q1" value="A"> A<br>
-<input type="radio" name="q1" value="B"> B<br>
-<input type="radio" name="q1" value="C"> C<br>
-<input type="radio" name="q1" value="D"> D<br>
-<div id="exp1" class="explanation"></div>
-</div>
+4. It is a statement which expresses that two numbers or algebraic expressions are equal.  
+A. Linear  
+B. Equation  
+C. Expression  
+D. Equivalent  
 
-<!-- Q2 -->
-<div class="question">
-<p><strong>2. Which point makes relation not a function?</strong></p>
-<input type="radio" name="q2" value="A"> A<br>
-<input type="radio" name="q2" value="B"> B<br>
-<input type="radio" name="q2" value="C"> C<br>
-<input type="radio" name="q2" value="D"> D<br>
-<div id="exp2" class="explanation"></div>
-</div>
+5. All of the following are linear equations EXCEPT:  
+A. 5 + y ≠ 10  
+B. 3x - 6 = 21  
+C. 3(x - 3) = 81  
+D. 7x + 8 = 72  
 
-<!-- Q3 to Q35 -->
-<!-- Repeat structure -->
-</body>
-<script>
-function submitTest(){
+6. Does {(1, 4), (2, 5), (3, 5), (6, 6), (1, 9)} represent a function?  
+A. A function  
+B. Not a function  
+C. Not enough information  
+D. It is not a relation  
 
-let score = 0;
+7. Which of the curves on the graph in Figure A indicates a function?  
+A. A only  
+B. A and B only  
+C. A, B, and C only  
+D. A, B, C, and D  
 
-let answers = {
-q1:"B", q2:"B", q3:"B", q4:"B", q5:"A",
-q6:"B", q7:"A", q8:"A", q9:"C", q10:"C",
-q11:"D", q12:"C", q13:"B", q14:"A", q15:"A",
-q16:"B", q17:"A", q18:"D", q19:"D", q20:"A",
-q21:"B", q22:"B", q23:"B", q24:"C", q25:"C",
-q26:"B", q27:"B", q28:"B", q29:"D", q30:"A",
-q31:"A", q32:"C", q33:"B", q34:"C", q35:"B"
-};
+8. If \(y = f(x)\) is a function, then \(x\) is called ____?  
+A. Input  
+B. Output  
+C. Function  
+D. Name of a function  
 
-for(let key in answers){
+9. What do you call a relation in which each element of the domain is paired with exactly one element of the range?  
+A. A relation  
+B. An ellipse  
+C. A function  
+D. Not a function  
 
-let selected = document.querySelector('input[name="'+key+'"]:checked');
-let exp = document.getElementById("exp"+key.substring(1));
+10. Which of the following gives the correct domain and range of the relation graphed?  
+A. Domain: {x > -2}; Range: {y > 1}  
+B. Domain: {x < -2}; Range: {y < 1}  
+C. Domain: {x > -2}; Range: {y < 1}  
+D. Domain: {x < -2}; Range: {y > 1}  
 
-if(selected){
-if(selected.value === answers[key]){
-score++;
-exp.innerHTML="<div class='correct'>✅ Your response shows correct conceptual understanding.</div>";
-}
-else{
-exp.innerHTML="<div class='incorrect'>❌ Review the related algebra concept and re-evaluate your reasoning.</div>";
-}
-}
-}
+11. What is the first step to solving \(a^2 + 10a + 21 = 0\) by completing the square?  
+A. Add \(a^2\) and 10a together  
+B. Set the equation equal to zero  
+C. Divide 21 to both sides  
+D. Apply addition property to eliminate 21  
 
-document.getElementById("finalScore").innerHTML =
-"<h2>Your Score: "+score+" / 35</h2>";
+12. Which of the following is NOT a function?  
+A.  
+B.  
+C.  
+D.  
 
-}
-</script>
+13. What property of equality would you use to solve this equation: \(7 + x = 14\)?  
+A. Division Property of Equality  
+B. Addition Property of Equality  
+C. Substitution Property of Equality  
+D. Transitive Property of Equality  
 
-<button onclick="submitTest()">Submit Test</button>
-<div id="finalScore"></div>
+14. Identify the property you would use to solve this equation: \(4x = 72\).  
+A. Addition Property of Equality  
+B. Division Property of Equality  
+C. Subtraction Property of Equality  
+D. Multiplication Property of Equality  
 
-</div>
-</body>
-</html>
+15. Which of the following gives the correct domain and range for the relation in the table?
+
+| x  | y  |
+|----|----|
+| 1  | 0  |
+| 0  | 2  |
+| 5  | -4 |
+| -2 | -1 |
+| 1  | 5  |
+
+A. Domain: {-4, -1, 0, 2, 5}; Range: {-2, 0, 1, 5}  
+B. Domain: {-5, -2, 0, 1, 4}; Range: {-5, -1, 0, 2}  
+C. Domain: {-5, -1, 0, 2}; Range: {-5, -2, 0, 1, 4}  
+D. Domain: {-2, 0, 1, 5}; Range: {-4, -1, 0, 2, 5}  
+
+16. Find the range of the function \(h(w) = 19 - 3w\) if the domain is {-4, -1, 2, 5}.  
+A. {-34, -25, -16, -7}  
+B. {7, 15, 25, 34}  
+C. {4, 13, 22, 31}  
+D. {-5, -2, 1, 4}  
+
+17. Determine whether \(f(x) = x^4 - x^3\) is even, odd, or neither.  
+A. Odd  
+B. Even  
+C. Neither  
+D. Cannot be determined  
+
+18. Give the domain and range of the relation {(11, -3), (2, -2), (2, 0), (6, 2), (18, 4)}.  
+A. Domain: {-3, -2, 2, 4}; Range: {11, 6, 2, 18}  
+B. Domain: {11, 2, 6, 18}; Range: {-3, -2, 2, 4}  
+C. Domain: {-3, -2, 0, 2, 4}; Range: {11, 6, 2, 18}  
+D. Domain: {2, 6, 11, 18}; Range: {-3, -2, 0, 2, 4}  
+
+19. The solution of \(2y + 9 = 4\) is:  
+A. 9/2  
+B. 4/9  
+C. -2/5  
+D. -5/2  
+
+20. The solution of \(2x - 3 = 7\) is:  
+A. 5  
+B. 7  
+C. 12  
+D. -12  
+
+21. Which of the following is a solution to the equation \(x + 8 = 2x - 4\)?  
+A. 4  
+B. -4  
+C. 12  
+D. -12  
+
+22. The domain of \(f(x) = (x^2 - x^4)\) is [0, 4].  
+A. Always true  
+B. Often true  
+C. Never true  
+D. Not enough information  
+
+23. Analyze the equation \(5(x - 2) = 3x + 4\). What is the solution set?  
+A. {3}  
+B. {4}  
+C. {5}  
+D. {7}  
+
+24. Evaluate \(f(x) = 2x^2 + 1\) for \(f(-3)\).  
+A. -17  
+B. -11  
+C. 19  
+D. 37  
+
+25. Which of the following is a solution to the equation \(x^2 - 9 = 0\) using the square root property?  
+A. \(x = -3\)  
+B. \(x = 3\)  
+C. \(x = \pm 3\)  
+D. \(x = 9\)  
+
+26. Solve using the Quadratic Formula: \(2x^2 + 7x - 15 = 0\).  
+A. 3 or 5  
+B. -5 or 2  
+C. 7 or 5  
+D. No Solution  
+
+27. Select each ordered pair that is a member of the function \(h(n) = 3n^2 - n\).  
+A. (-5, 8)  
+B. (3, 42)  
+C. (3, 6)  
+D. (-2, 14)  
+  28. Rationalizing \(\frac{1}{\sqrt{2} - \sqrt{3}}\) gives:  
+A. \(\frac{\sqrt{2} + \sqrt{3}}{-1}\)  
+B. \(\frac{\sqrt{2} + \sqrt{3}}{2}\)  
+C. \(\frac{6}{\sqrt{3}}\)  
+D. \(\frac{\sqrt{2} + \sqrt{3}}{1}\)  
+
+29. Simplify: \(8k^6q^8\)  
+A. \(2k^3q^4\)  
+B. \(2^2k^2|k|q^8\)  
+C. \(2^2k^2|k|q^4\)  
+D. \(2^2k^3q^4\)  
+
+30. If \(f(x) = 2x - 1\), then \(f(3x + 4) = \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\
