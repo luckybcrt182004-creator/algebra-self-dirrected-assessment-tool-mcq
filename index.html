@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Algebra Digital MCQ Assessment</title>
+
+<style>
+body{
+font-family: Arial;
+background-color:#f4f6f9;
+padding:40px;
+}
+
+.container{
+background:white;
+padding:30px;
+max-width:900px;
+margin:auto;
+border-radius:10px;
+box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.question{
+margin-bottom:30px;
+padding-bottom:15px;
+border-bottom:1px solid #ddd;
+}
+
+.explanation{
+margin-top:10px;
+padding:10px;
+border-radius:5px;
+}
+
+.correct{
+background-color:#d4edda;
+}
+
+.incorrect{
+background-color:#f8d7da;
+}
+
+button{
+padding:12px 25px;
+background:#2e86de;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#1b4f72;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Algebra Digital MCQ Assessment</h1>
+<p>Please answer all questions carefully.</p>
+
+<!-- ================= QUESTION 1 ================= -->
+
+<div class="question">
+<p><strong>1. What property of equality is used when a = b, then b = a?</strong></p>
+
+<input type="radio" name="q1" value="A"> A. Reflexive Property<br>
+<input type="radio" name="q1" value="B"> B. Symmetric Property<br>
+<input type="radio" name="q1" value="C"> C. Transitive Property<br>
+<input type="radio" name="q1" value="D"> D. Commutative Property<br>
+
+<div id="exp1" class="explanation"></div>
+</div>
+
+<!-- ================= QUESTION 2 ================= -->
+
+<div class="question">
+<p><strong>2. Which point will make the relation not a function?</strong></p>
+
+<input type="radio" name="q2" value="A"> A. (10,12)<br>
+<input type="radio" name="q2" value="B"> B. (3,12)<br>
+<input type="radio" name="q2" value="C"> C. (9,12)<br>
+<input type="radio" name="q2" value="D"> D. (8,7)<br>
+
+<div id="exp2" class="explanation"></div>
+</div>
+
+<button onclick="submitTest()">Submit Test</button>
+
+<div id="finalScore" style="margin-top:20px;"></div>
+
+</div>
+
+<script>
+
+function submitTest(){
+
+let score = 0;
+
+/* ===== QUESTION 1 ===== */
+let q1 = document.querySelector('input[name="q1"]:checked');
+
+if(q1){
+if(q1.value === "B"){
+score++;
+document.getElementById("exp1").innerHTML =
+"<div class='correct'>✅ Your response reflects correct understanding of the symmetric property of equality.</div>";
+}
+else{
+document.getElementById("exp1").innerHTML =
+"<div class='incorrect'>❌ Review the symmetric property. It states that if a = b, then b = a.</div>";
+}
+}
+
+/* ===== QUESTION 2 ===== */
+let q2 = document.querySelector('input[name="q2"]:checked');
+
+if(q2){
+if(q2.value === "B"){
+score++;
+document.getElementById("exp2").innerHTML =
+"<div class='correct'>✅ You correctly identified a violation of the function rule.</div>";
+}
+else{
+document.getElementById("exp2").innerHTML =
+"<div class='incorrect'>❌ Recall that a function cannot assign two different outputs to the same input value.</div>";
+}
+}
+
+document.getElementById("finalScore").innerHTML =
+"<h3>Your Score: " + score + " / 2</h3>";
+
+}
+
+</script>
+
+</body>
+</html>
